@@ -15,4 +15,14 @@ class Post extends Model
      * @var string
      */
     protected $table = 'posts';
+
+    /**
+     * Referênciando quais os campos que podem ser preenchido.
+     * 
+     * @var array
+     */
+    protected $fillable = [
+        'title',
+        'content'
+    ];
 }
